@@ -1,0 +1,53 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #0000006c;
+    position: fixed;
+    width: 100vw;
+    .nav-logo{
+        height: 55px;
+    }
+    .bx-menu{
+        color: #ffffff;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all .4s;
+    }
+    .bx-menu:hover{
+        color: $color-acento;
+    }
+    .nav{
+        width: 50vw;
+        height: 30vh;
+        position: absolute;
+        top: 80px;
+        left: -50vw;
+        opacity: 0;
+        padding: 1rem;
+        transition: all .4s;
+        background-color: $color-fondo;
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            li{
+                a{
+                    color: #ffffff;
+                    font-size: 1.5rem;
+                    transition: all .3s;
+                }
+                a:hover{
+                    color: $color-acento;
+                }
+            }
+        }
+    }
+    .activo{
+        left: 0;
+        opacity: 1;
+    }
+}
