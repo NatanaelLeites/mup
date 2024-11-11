@@ -1,0 +1,19 @@
+.pagos{
+    padding: 80px 1rem 1rem 1rem;
+    color: $color-acento;
+    background-color: #121212;
+    .iconos-pago{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .pix-icon{
+            height: 2rem;
+            fill: $color-acento;
+            padding-right: 1rem;
+        }
+        .bx-qr{
+            font-size: 2.5rem;
+        }
+    }
+    
+}

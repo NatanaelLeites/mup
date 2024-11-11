@@ -10,3 +10,10 @@ nav.addEventListener('click', (event) => {
         nav.classList.remove('activo');
     }
 });
+
+/* envios de email */
+function submitForm() {
+    // Aquí puedes realizar acciones antes de enviar el formulario, como validar datos
+    document.getElementById("myForm").submit();
+    window.location.href = "index.html"; // Redirige a la página que deseas
+}
