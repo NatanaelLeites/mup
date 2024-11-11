@@ -2,6 +2,10 @@
 @import 'variables';
 @import 'header';
 @import 'hero';
+@import 'curso';
+@import 'equipo';
+@import 'programa';
+@import 'pagos';
 
 * {
     margin: 0;
@@ -22,13 +26,16 @@ ul{
 
 body {
     
-    height: 100vh;
     width: 100vw;
-    overflow: hidden;
-    background: linear-gradient(360deg, #b4ffb2, #054949);
-    background: -webkit-linear-gradient(360deg, #b4ffb2, #054949);
+    overflow-x: hidden;
+
+    /* background: linear-gradient(360deg, #b4ffb2, #054949); */
+
+    /* background: -webkit-linear-gradient(360deg, #b4ffb2, #054949); */
+
     /* Para Safari */
-    background: -moz-linear-gradient(360deg, #b4ffb2, #054949);
+    /* background: -moz-linear-gradient(360deg, #b4ffb2, #054949); */
+
     /* Para Firefox */
-    background: linear-gradient(360deg, #b4ffb2, #054949);
+    /* background: linear-gradient(360deg, #b4ffb2, #054949); */
 }

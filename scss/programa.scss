@@ -1,0 +1,46 @@
+.programa {
+    padding: 80px 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-fondo;
+
+    .titular-programa {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            color: #dfdfdf;
+            padding-right: 1rem;
+        }
+        
+        .bxs-spreadsheet {
+            font-size: 1.6rem;
+            color: #dfdfdf;
+        }
+    }
+
+    .accordion-item {
+
+        .accordion-header {
+            .accordion-button {
+                background-color: #2c2c2c;
+                color: #dfdfdf;
+            }
+        }
+
+        .accordion-body {
+            background-color: $color-fondo;
+            padding: 1rem;
+
+            .contenido {
+                color: #dfdfdf;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+
+}
