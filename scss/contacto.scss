@@ -2,6 +2,9 @@
     padding: 80px 1rem 1rem 1rem;
     background-color: $color-fondo;
     color: #ffffff;
+    input::placeholder {
+        color: #ffffff;
+      }
     input{
         @include color-form;
     }
@@ -10,6 +13,9 @@
     }
     input:active{
         @include color-form;
+    }
+    textarea::placeholder{
+        color: #ffffff
     }
     textarea{
         @include color-form;

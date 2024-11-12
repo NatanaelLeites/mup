@@ -153,6 +153,8 @@
   padding: 80px 1rem 1rem 1rem;
   background-color: #024731;
   color: #ffffff; }
+  .contacto input::placeholder {
+    color: #ffffff; }
   .contacto input {
     background-color: #282828;
     color: #ffffff; }
@@ -161,6 +163,8 @@
     color: #ffffff; }
   .contacto input:active {
     background-color: #282828;
+    color: #ffffff; }
+  .contacto textarea::placeholder {
     color: #ffffff; }
   .contacto textarea {
     background-color: #282828;
