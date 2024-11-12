@@ -1,3 +1,23 @@
 .contacto{
     padding: 80px 1rem 1rem 1rem;
+    background-color: $color-fondo;
+    color: #ffffff;
+    input{
+        @include color-form;
+    }
+    input:focus{
+        @include color-form;
+    }
+    input:active{
+        @include color-form;
+    }
+    textarea{
+        @include color-form;
+    }
+    textarea:focus{
+        @include color-form;
+    }
+    .btn-dark{
+        margin-top: 1rem;
+    }
 }

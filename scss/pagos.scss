@@ -1,6 +1,6 @@
 .pagos{
     padding: 80px 1rem 1rem 1rem;
-    color: $color-acento;
+    color: #4CAF50;
     background-color: #121212;
     .iconos-pago{
         display: flex;
@@ -8,7 +8,7 @@
         justify-content: center;
         .pix-icon{
             height: 2rem;
-            fill: $color-acento;
+            fill: #4CAF50;
             padding-right: 1rem;
         }
         .bx-qr{

@@ -1,2 +1,7 @@
 $color-fondo: #024731;
-$color-acento: #4CAF50;
+$color-acento: #17781a;
+
+@mixin color-form {
+    background-color: #282828;
+    color: #ffffff;
+}
