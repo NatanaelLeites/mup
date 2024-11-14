@@ -225,6 +225,93 @@
         color: #ffffff;
         font-size: 2rem; }
 
+.registro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #024731;
+  height: 100vh; }
+  .registro-container a .nav-logo {
+    height: 85px; }
+  .registro-container #registroForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    color: #ffffff; }
+    .registro-container #registroForm #btn-registrar {
+      background-color: #17781a;
+      color: #eeeeee;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 1rem 0;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px #0000004d;
+      text-shadow: 0px 0px 2px #000000;
+      transition: all .4s; }
+    .registro-container #registroForm #btn-registrar:hover {
+      background-color: #004802;
+      color: #ffffff; }
+
+/* boton google */
+.button-google {
+  max-width: 320px;
+  display: flex;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  gap: 0.75rem;
+  color: #413f3f;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .6s ease;
+  margin: 1rem 0; }
+  .button-google .button-google-svg {
+    height: 24px; }
+
+.button-google:hover {
+  transform: scale(1.02); }
+
+/* boton facebook */
+.button {
+  display: flex;
+  background-color: #039be5;
+  background-image: linear-gradient(to top right, #0163E0, #18ACFE);
+  color: #ffffff;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  gap: 0.75rem;
+  border: none;
+  box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: .6s ease; }
+
+.button svg {
+  height: 30px; }
+
+.button:hover {
+  transform: scale(1.02); }
+
 * {
   margin: 0;
   padding: 0;
