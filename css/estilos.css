@@ -198,10 +198,14 @@
       text-align: center;
       padding-bottom: 10rem;
       z-index: 999; }
-    .hero a {
-      z-index: 999; }
+    .hero .btn-registro {
+      z-index: 999;
+      font-size: 1.5rem; }
     .hero h3 {
-      z-index: 999; } }
+      z-index: 999;
+      color: #ffffff;
+      text-shadow: 0px 0px 2px #000000;
+      font-size: 3rem; } }
 
 .curso {
   background-color: #024731;
