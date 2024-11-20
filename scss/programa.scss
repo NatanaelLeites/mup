@@ -1,5 +1,5 @@
 .programa {
-    padding: 80px 1rem 1rem 1rem;
+    padding: 100px 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,4 +43,28 @@
     }
 
 
+}
+/* Media Q */
+@media (min-width: 390px){
+    .programa{
+        .titular-programa {
+            display: flex;
+            align-items: center;
+    
+            h2 {
+                font-size: 2.5rem;
+                color: #dfdfdf;
+                padding-right: 1rem;
+            }
+            
+            .bxs-spreadsheet {
+                font-size: 1.6rem;
+                color: #dfdfdf;
+            }
+        }
+    
+        .accordion-item {
+            width: 80vw;
+        }
+    }
 }

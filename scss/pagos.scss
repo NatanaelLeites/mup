@@ -1,5 +1,5 @@
 .pagos{
-    padding: 80px 1rem 1rem 1rem;
+    padding: 100px 1rem 1rem 1rem;
     color: #4CAF50;
     background-color: #121212;
     .iconos-pago{
@@ -16,4 +16,11 @@
         }
     }
     
+}
+/* Media Q */
+@media (min-width: 768px){
+    .pagos{
+        padding: 100px 4rem 1rem 4rem;
+        
+    }
 }

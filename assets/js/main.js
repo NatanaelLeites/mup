@@ -13,7 +13,8 @@ nav.addEventListener('click', (event) => {
 
 /* envios de email */
 function submitForm() {
-    // Aquí puedes realizar acciones antes de enviar el formulario, como validar datos
+    
     document.getElementById("myForm").submit();
-    window.location.href = "index.html"; // Redirige a la página que deseas
+    alert('Enviado!')
+    window.location.href = "index.html";
 }

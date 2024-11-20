@@ -13,3 +13,20 @@
         color: #ffffff;
     }
 }
+/* Media Q */
+@media (min-width: 1023px){
+    .equipo{
+        padding: 100px 4rem 1rem 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+}
+@media (min-width: 768px){
+    .equipo{
+        padding: 80px 4rem 1rem 4rem;
+        display: flex;
+        align-items: normal;
+    }
+}

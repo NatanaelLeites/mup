@@ -1,6 +1,6 @@
 .curso {
     background-color: $color-fondo;
-    padding: 80px 1rem 1rem 1rem;
+    padding: 100px 1rem 1rem 1rem;
     
 
     h4 {
@@ -15,5 +15,17 @@
 
     p {
         color: #ffffff;
+    }
+}
+@media (min-width: 480px){
+    .curso {
+        background-color: $color-fondo;
+        padding: 100px 2rem 1rem 2rem;
+    }
+}
+@media (min-width: 1023px){
+    .curso {
+        background-color: $color-fondo;
+        padding: 100px 4rem 1rem 4rem;
     }
 }

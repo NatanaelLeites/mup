@@ -1,4 +1,4 @@
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,19 +7,23 @@
     position: fixed;
     width: 100vw;
     z-index: 999;
-    .nav-logo{
+
+    .nav-logo {
         height: 55px;
     }
-    .bx-menu{
+
+    .bx-menu {
         color: #ffffff;
         font-size: 2rem;
         cursor: pointer;
         transition: all .4s;
     }
-    .bx-menu:hover{
+
+    .bx-menu:hover {
         color: $color-acento;
     }
-    .nav{
+
+    .nav {
         width: 50vw;
         height: 40vh;
         position: absolute;
@@ -29,35 +33,88 @@
         padding: 1rem;
         transition: all .5s;
         background-color: $color-fondo;
-        ul{
+
+        ul {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
             height: 100%;
-            li{
-                a{
+
+            li {
+                a {
                     color: #ffffff;
                     font-size: 1.2rem;
                     transition: all .3s;
                 }
-                a:hover{
+
+                a:hover {
                     color: greenyellow;
                 }
             }
-            .entre-btn-menu{
+
+            .entre-btn-menu {
                 color: #66ff00;
                 text-shadow: 0px 0px 5px #000000;
             }
-            .entre-btn-menu:hover{
+
+            .entre-btn-menu:hover {
                 color: #00a226;
             }
         }
     }
-    .activo{
+
+    .activo {
         left: 0;
         opacity: 1;
     }
 }
 
 /* Medias */
+@media (min-width: 390px) {
+    .header {
+        .nav {
+            width: 200px;
+        }
+    }
+}
+
+@media (min-width: 1023px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0000006c;
+        padding: 0 1rem;
+        position: fixed;
+        width: 100vw;
+        z-index: 999;
+
+        .nav-logo {
+            height: 70px;
+        }
+
+        .bx-menu {
+            display: none;
+        }
+
+        .nav {
+            width: 100%;
+            height: 2rem;
+            position: static;
+            opacity: 1;
+            padding: 0;
+            transition: all .5s;
+            background-color: transparent;
+            justify-content: flex-end;
+            ul{
+                display: flex;
+                flex-flow: row nowrap;
+                padding: 0;
+                li{
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+}
