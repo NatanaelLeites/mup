@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "titulo": "Introdução ao cultivo",
+        "duracion": "1 hora 30 minutos",
+        "link": "https://www.example.com/videos/programacion1.mp4"
+    },
+    {
+        "id": 2,
+        "titulo": "Vegetativo",
+        "duracion": "2 horas",
+        "link": "https://www.example.com/videos/diseño_web.mp4"
+    },
+    {
+        "id": 3,
+        "titulo": "Floração",
+        "duracion": "2 horas 30 minutos",
+        "link": "https://www.example.com/videos/apps_moviles.mp4"
+    },
+    {
+        "id": 4,
+        "titulo": "Contratempos",
+        "duracion": "2 horas 30 minutos",
+        "link": "https://www.example.com/videos/apps_moviles.mp4"
+    },
+    {
+        "id": 5,
+        "titulo": "Colheita",
+        "duracion": "2 horas 30 minutos",
+        "link": "https://www.example.com/videos/apps_moviles.mp4"
+    },
+    {
+        "id": 6,
+        "titulo": "Indoor do zero",
+        "duracion": "2 horas 30 minutos",
+        "link": "https://www.example.com/videos/apps_moviles.mp4"
+    },
+    {
+        "id": 7,
+        "titulo": "Genéticas",
+        "duracion": "2 horas 30 minutos",
+        "link": "https://www.example.com/videos/apps_moviles.mp4"
+    }
+]

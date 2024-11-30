@@ -545,6 +545,35 @@ p {
   p a:hover {
     color: #26e001; }
 
+.nav-plataforma {
+  display: flex;
+  align-items: center;
+  background-color: #024731; }
+  .nav-plataforma a {
+    padding: .5rem 1rem; }
+    .nav-plataforma a .nav-plataforma-logo {
+      height: 65px; }
+  .nav-plataforma .saludoPlataforma {
+    margin: 0;
+    padding-left: 1rem;
+    color: #ffffff; }
+
+.clases-container {
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 2rem; }
+  .clases-container .videoAula {
+    padding: 2rem;
+    border-bottom: 2px solid #ffffff; }
+    .clases-container .videoAula h3 {
+      color: #ffffff; }
+    .clases-container .videoAula p {
+      color: #17781a;
+      font-weight: bold; }
+
 * {
   margin: 0;
   padding: 0;
@@ -563,10 +592,4 @@ ul {
 
 body {
   width: 100vw;
-  overflow-x: hidden;
-  /* background: linear-gradient(360deg, #b4ffb2, #054949); */
-  /* background: -webkit-linear-gradient(360deg, #b4ffb2, #054949); */
-  /* Para Safari */
-  /* background: -moz-linear-gradient(360deg, #b4ffb2, #054949); */
-  /* Para Firefox */
-  /* background: linear-gradient(360deg, #b4ffb2, #054949); */ }
+  overflow-x: hidden; }

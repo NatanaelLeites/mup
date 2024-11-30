@@ -11,6 +11,7 @@
 @import 'footer';
 @import 'registro';
 @import 'iniciar';
+@import 'plataforma';
 
 * {
     margin: 0;
@@ -30,17 +31,6 @@ ul{
 }
 
 body {
-    
     width: 100vw;
     overflow-x: hidden;
-
-    /* background: linear-gradient(360deg, #b4ffb2, #054949); */
-
-    /* background: -webkit-linear-gradient(360deg, #b4ffb2, #054949); */
-
-    /* Para Safari */
-    /* background: -moz-linear-gradient(360deg, #b4ffb2, #054949); */
-
-    /* Para Firefox */
-    /* background: linear-gradient(360deg, #b4ffb2, #054949); */
 }
