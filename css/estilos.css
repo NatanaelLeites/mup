@@ -248,15 +248,23 @@
 
 .equipo {
   background-color: #171717;
-  padding: 80px 1rem 1rem 1rem; }
+  padding: 80px 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .equipo img {
     height: 260px;
-    object-fit: cover; }
+    object-fit: cover;
+    padding: 0 2rem 2rem; }
   .equipo h3 {
     color: #ffffff;
     padding-bottom: 1rem; }
   .equipo p {
     color: #ffffff; }
+  .equipo .equipo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 /* Media Q */
 @media (min-width: 1023px) {

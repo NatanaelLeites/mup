@@ -18,3 +18,5 @@ function submitForm() {
     alert('Enviado!')
     window.location.href = "index.html";
 }
+
+export const linkDePago = "https://www.google.com/webhp?hl=es&ictx=2&sa=X&sqi=2&ved=0ahUKEwjGh5TSpIqKAxUsJrkGHaS9CKAQPQgI"

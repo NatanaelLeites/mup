@@ -1,9 +1,13 @@
 .equipo{
     background-color: #171717;
     padding: 80px 1rem 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img{
         height: 260px;
         object-fit: cover;
+        padding: 0 2rem 2rem;
     }
     h3{
         color: #ffffff;
@@ -11,6 +15,11 @@
     }
     p{
         color: #ffffff;
+    }
+    .equipo-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 /* Media Q */
