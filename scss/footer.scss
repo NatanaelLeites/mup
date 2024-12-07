@@ -1,5 +1,5 @@
 .footer{
-    background-color: $color-fondo;
+    background-color: #242424;
     color: #ffffff;
     padding: 1rem;
 
@@ -21,7 +21,7 @@
 /* Media Q */
 @media (min-width: 1023px){
     .footer{
-        background-color: #242424;
+        
         color: #ffffff;
         padding: 1rem;
         display: flex;
