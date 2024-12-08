@@ -1,4 +1,26 @@
-"use strict";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"
+import { getDocs, collection } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js"
+import { auth, db } from "./firebase.js";
+import { loginCheck } from "./loginCheck.js";
+import { setupPosts } from "./postList.js"
+
+import './signupForm.js'
+import './signinForm.js'
+import './logout.js'
+
+onAuthStateChanged(auth, async (user) => {
+    if (user) {
+        const querySnapshot = await getDocs(collection(db, 'posts'))
+        setupPosts(querySnapshot.docs)
+    } else {
+
+    }
+    loginCheck(user)
+})
+
+
+
+/* Menu mobile */
 const btnMenu = document.getElementById('nav-btn');
 const nav = document.getElementById('nav');
 
@@ -11,9 +33,9 @@ nav.addEventListener('click', (event) => {
     }
 });
 
-/* envios de email */
+/* Envios de email */
 function submitForm() {
-    
+
     document.getElementById("myForm").submit();
     alert('Enviado!')
     window.location.href = "index.html";

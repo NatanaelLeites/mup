@@ -42,6 +42,16 @@
             height: 100%;
 
             li {
+                button{
+                    border: none;
+                    background: transparent;
+                    color: #ffffff;
+                    font-size: 1.2rem;
+                    transition: all .3s;
+                }
+                button:hover{
+                    color: greenyellow;
+                }
                 a {
                     color: #ffffff;
                     font-size: 1.2rem;
