@@ -138,7 +138,7 @@
 /* Media Q */
 @media (min-width: 390px) {
   .hero {
-    background-image: none;
+    background-color: #242424;
     padding-top: 100px;
     height: 100vh;
     display: flex;
@@ -171,7 +171,7 @@
 
 @media (min-width: 1023px) {
   .hero {
-    background-image: none;
+    background-color: #242424;
     padding-top: 100px;
     height: 100vh;
     display: flex;
