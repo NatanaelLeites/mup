@@ -7,7 +7,6 @@ import { setupPosts } from "./postList.js"
 import './signupForm.js'
 import './signinForm.js'
 import './logout.js'
-
 onAuthStateChanged(auth, async (user) => {
     if (user) {
         const querySnapshot = await getDocs(collection(db, 'posts'))
@@ -16,6 +15,29 @@ onAuthStateChanged(auth, async (user) => {
 
     }
     loginCheck(user)
+})
+
+/* Comprar */
+const btnComprar = document.getElementById('btn-comprar')
+btnComprar.addEventListener('click', () => {
+    if (user) {
+        window.location.href = '#';
+    } else {
+        Toastify({
+            text: 'Deve iniciar',
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top",
+            position: "right", 
+            stopOnFocus: true, 
+            style: {
+              background: type === "success" ? "green" : "red",
+            },
+            
+          }).showToast();
+    }
 })
 
 
