@@ -94,6 +94,56 @@
 .modal h3 {
   color: #ffffff; }
 
+/* From Uiverse.io by Ashon-G */
+.loader {
+  --hue: 106;
+  --size: 180px;
+  --border: 20px;
+  --speed: 1s;
+  --blur: var(--border); }
+
+.loader {
+  display: none;
+  width: var(--border);
+  aspect-ratio: 1;
+  background: #186600;
+  border-radius: 50%;
+  position: fixed;
+  left: 50%;
+  top: 200px;
+  z-index: 99999;
+  --y: calc((var(--size) * -0.5) + (var(--border) * 0.5));
+  transform: rotate(0deg) translateY(var(--y));
+  animation: spin var(--speed) infinite linear; }
+
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: calc(var(--border) * -0.5);
+  border-radius: 50%;
+  background: #186600;
+  filter: blur(var(--blur));
+  z-index: -1; }
+
+.loader::after {
+  content: "";
+  width: var(--size);
+  aspect-ratio: 1;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  translate: -50% 0;
+  background: conic-gradient(#186600, hsl(var(--hue), 100%, 70%), hsl(var(--hue), 100%, 10%), transparent 65%);
+  border-radius: 50%;
+  mask: radial-gradient(transparent calc(((var(--size) * 0.5) - var(--border)) - 1px), white calc((var(--size) * 0.5) - var(--border))); }
+
+@keyframes spin {
+  to {
+    transform: rotate(-360deg) translateY(var(--y)); } }
+
+#loader.show {
+  display: block; }
+
 .hero {
   padding-top: 100px;
   background-image: linear-gradient(to bottom, #0000004a, #000000), url("../assets/img/fondo5.jpg");
@@ -418,6 +468,37 @@
           color: #ffffff;
           font-size: 2rem;
           padding: .5rem; } }
+
+.nav-plataforma {
+  display: flex;
+  align-items: center;
+  background-color: #024731; }
+  .nav-plataforma a {
+    padding: .5rem 1rem; }
+    .nav-plataforma a .nav-plataforma-logo {
+      height: 65px; }
+  .nav-plataforma .saludoPlataforma {
+    margin: 0;
+    padding-left: 1rem;
+    color: #ffffff; }
+
+.clases-container {
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 2rem; }
+  .clases-container .videoAula {
+    padding: 2rem;
+    border-bottom: 2px solid #ffffff; }
+    .clases-container .videoAula h3 {
+      color: #ffffff; }
+    .clases-container .videoAula p {
+      color: #17781a;
+      font-weight: bold; }
+    .clases-container .videoAula .videoPostado {
+      width: 300px; }
 
 * {
   margin: 0;

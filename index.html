@@ -36,14 +36,15 @@
                 <li><a class="nav-item" href="#contacto">Contato</a></li>
                 <li><button class="nav-item logged-out entre-btn-menu" data-bs-toggle="modal"
                         data-bs-target="#signinModal" href="./pages/iniciar.html">Entre!</button></li>
-                <li><button class="nav-item logged-out entre-btn-menu" data-bs-toggle="modal"
-                        data-bs-target="#signupModal" href="./pages/registro.html">Registro</button></li>
+                <!-- <li><button class="nav-item logged-out entre-btn-menu" data-bs-toggle="modal"
+                        data-bs-target="#signupModal" href="./pages/registro.html">Registro</button></li> -->
                 <li><button class="nav-item logged-in" id="logout">Sair</button></li>
 
             </ul>
         </nav>
     </header>
-    <!-- Modal -->
+    <!-- loader -->
+    <div id="loader" aria-live="assertive" role="alert" class="loader"></div>
     <!-- Modal Registro -->
     <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -57,11 +58,15 @@
                 <div class="modal-body p-5">
 
                     <form id="signup-form">
-                        
-                        <input type="text" id="nombre-reg" class="form-control mb-3" name="nombre" placeholder="Nome" required>
-                        <input type="text" id="apellido-reg" class="form-control mb-3" name="apellido" placeholder="Sobrenome" required>
-                        <input type="email" id="email-reg" class="form-control mb-3" name="email" placeholder="email" required>
-                        <input type="password" id="password-reg" class="form-control mb-3" name="password" placeholder="senha" required>
+
+                        <input type="text" id="nombre-reg" class="form-control mb-3" name="nombre" placeholder="Nome"
+                            required>
+                        <input type="text" id="apellido-reg" class="form-control mb-3" name="apellido"
+                            placeholder="Sobrenome" required>
+                        <input type="email" id="email-reg" class="form-control mb-3" name="email" placeholder="email"
+                            required>
+                        <input type="password" id="password-reg" class="form-control mb-3" name="password"
+                            placeholder="senha" required>
 
                         <button id="btn-registrar" type="submit" class="btn btn-success w-100 mb-4">Registrar</button>
                     </form>
@@ -82,9 +87,11 @@
                 <div class="modal-body p5">
                     <form id="login-form">
                         <label for="email">E-mail:</label>
-                        <input class="form-control mb-3" type="email" id="login-email" name="email" placeholder="email" required>
+                        <input class="form-control mb-3" type="email" id="login-email" name="email" placeholder="email"
+                            required>
                         <label for="password">Senha:</label>
-                        <input class="form-control mb-3 " type="password" id="login-password" name="password" placeholder="senha" required>
+                        <input class="form-control mb-3 " type="password" id="login-password" name="password"
+                            placeholder="senha" required>
                         <button class="btn btn-success" id="btn-iniciar">Iniciar</button>
                     </form>
                 </div>
@@ -94,8 +101,7 @@
     </div>
     <!-- Modal Fin -->
     <section class="hero">
-        <video autoplay muted loop
-            src="./assets/img/fondo-video-1.mp4"></video>
+        <video autoplay muted loop src="./assets/img/fondo-video-1.mp4"></video>
         <h1 class="titulo-pagina">Metodo Uruguaio de Produção</h1>
         <button id="btn-comprar" href="index.html" class="btn-registro">Comprar Agora</button>
         <h3>Fique Livre Do Prensado</h3>

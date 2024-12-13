@@ -3,25 +3,28 @@ import { getDocs, collection } from "https://www.gstatic.com/firebasejs/9.10.0/f
 import { auth, db } from "./firebase.js";
 import { loginCheck } from "./loginCheck.js";
 import { setupPosts } from "./postList.js"
+import { hideLoader, showLoader } from "./loader.js";
 
 import './signupForm.js'
 import './signinForm.js'
 import './logout.js'
+import { showMessage } from "./showMessage.js";
 onAuthStateChanged(auth, async (user) => {
+    showLoader()
     if (user) {
         const querySnapshot = await getDocs(collection(db, 'posts'))
         setupPosts(querySnapshot.docs)
     } else {
 
     }
+    hideLoader()
     loginCheck(user)
 })
-
 /* Comprar */
 const btnComprar = document.getElementById('btn-comprar')
 btnComprar.addEventListener('click', () => {
     if (user) {
-        window.location.href = '#';
+        window.location.href = './pages/plataforma.hmtl';
     } else {
         Toastify({
             text: 'Deve iniciar',
@@ -30,13 +33,13 @@ btnComprar.addEventListener('click', () => {
             newWindow: true,
             close: true,
             gravity: "top",
-            position: "right", 
-            stopOnFocus: true, 
+            position: "right",
+            stopOnFocus: true,
             style: {
-              background: type === "success" ? "green" : "red",
+                background: type === "success" ? "green" : "red",
             },
-            
-          }).showToast();
+
+        }).showToast();
     }
 })
 

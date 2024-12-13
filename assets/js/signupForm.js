@@ -1,11 +1,13 @@
-import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"
+/* import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"
 import { auth } from "./firebase.js";
 import { showMessage } from "./showMessage.js";
+import { hideLoader, showLoader } from "./loader.js";
 
 const signUpForm = document.querySelector("#signup-form");
 
 signUpForm.addEventListener("submit", async (e) => {
   e.preventDefault();
+  showLoader();
   const nombre = signUpForm["nombre-reg"].value;
   const apellido = signUpForm["apellido-reg"].value;
   const email = signUpForm["email-reg"].value;
@@ -13,12 +15,12 @@ signUpForm.addEventListener("submit", async (e) => {
 
   try {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password)
-    console.log(userCredential)
 
     // Cerrar modal
     const signupModal = document.querySelector('#signupModal');
     const modal = bootstrap.Modal.getInstance(signupModal);
     modal.hide();
+    hideLoader();
 
     // reset the form
     signUpForm.reset();
@@ -36,6 +38,8 @@ signUpForm.addEventListener("submit", async (e) => {
     } else if (error.code) {
       showMessage("Falhou o Registro, tente novamente", "error")
     }
+    hideLoader();
   }
 
 });
+ */

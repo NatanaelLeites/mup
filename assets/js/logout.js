@@ -1,14 +1,18 @@
 import { signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"
 import { auth } from "./firebase.js";
+import { hideLoader, showLoader } from "./loader.js";
+import { showMessage } from "./showMessage.js";
 
 const logout = document.getElementById("logout");
 
-logout.addEventListener("click", async (e) => {
-  e.preventDefault();
+logout.addEventListener("click", async () => {
+  showLoader();
   try {
     await signOut(auth)
-    console.log("Saiu");
+    location.reload();
+    hideLoader();
   } catch (error) {
-    console.log(error)
+    showMessage('Tente sair novamente', 'error')
+    hideLoader();
   }
 });

@@ -1,23 +1,26 @@
 import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"
 import { auth } from "./firebase.js";
 import { showMessage } from "./showMessage.js";
+import { hideLoader, showLoader } from "./loader.js";
 
 const signInForm = document.querySelector("#login-form");
 
 signInForm.addEventListener("submit", async (e) => {
   e.preventDefault();
+  showLoader();
   const email = signInForm["login-email"].value;
   const password = signInForm["login-password"].value;
 
   try {
     const userCredentials = await signInWithEmailAndPassword(auth, email, password)
-    console.log(userCredentials)
+    window.location.href = "./pages/plataforma.html";
 
-    // Close the login modal
+    // Cierra modal
     const modal = bootstrap.Modal.getInstance(signinModal.closest('.modal'));
     modal.hide();
+    hideLoader();
 
-    // reset the form
+    // resetea form
     signInForm.reset();
 
     // show welcome message
@@ -30,5 +33,6 @@ signInForm.addEventListener("submit", async (e) => {
     } else {
       showMessage("Erro no inicio", "error")
     }
+    hideLoader();
   }
 });
